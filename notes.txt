@@ -1,0 +1,10 @@
+to run: 
+
+1. start signal server: python3 signal_server.py 6000 (mac public ip: 192.168.192.84)
+
+2. start verifier nodes: 
+    python3 verifier_node.py id_server_1 verifier1 192.168.192.84 6000 5001
+    python3 verifier_node.py id_server_2 verifier2 192.168.192.84 6000 5002
+    python3 verifier_node.py id_server_3 verifier3 192.168.192.84 6000 5003
+
+3. start client: python3 client_node.py id_client_1 client1 192.168.192.84 6000 5005
